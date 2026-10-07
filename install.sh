@@ -6,7 +6,7 @@ echo "========================================"
 echo "Installing official Arch Linux packages"
 echo "========================================"
 
-sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd fastfetch nano firefox htop kate kcalc libreoffice-fresh qbittorrent steam qemu-full virt-manager virt-viewer dnsmasq vde2 openbsd-netcat libguestfs
+sudo pacman -S --noconfirm ttf-jetbrains-mono-nerd fastfetch nano firefox htop kate kcalc libreoffice-fresh qbittorrent steam qemu-full virt-manager virt-viewer dnsmasq vde2 openbsd-netcat libguestfs discord dolphin dolphin-plugins
 
 echo ""
 echo "========================================"
@@ -32,7 +32,14 @@ echo "========================================"
 echo "Installing AUR packages"
 echo "========================================"
 
-yay -S --noconfirm visual-studio-code-bin brave-bin
+yay -S --noconfirm visual-studio-code-bin brave-bin plasma6-wallpapers-smart-video-wallpaper-reborn
+
+echo ""
+echo "========================================"
+echo "Restarting plasmashell"
+echo "========================================"
+
+systemctl --user restart plasma-plasmashell.service
 
 echo ""
 echo "========================================"
